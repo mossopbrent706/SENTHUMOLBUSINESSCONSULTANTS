@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>College Attendance Tracker — SENTHUMOL Business Consultants</title>
+  <meta name="description" content="Track, analyze, and export classroom attendance. Simple for lecturers, insightful for admins." />
+  <meta name="theme-color" content="#0b5fff" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="./">
+        <span class="badge">S</span> SENTHUMOL • College Attendance Tracker
+      </a>
+      <div class="actions">
+        <a class="btn ghost" href="#features">Features</a>
+        <a class="btn ghost" href="#demo">Demo</a>
+        <a class="btn primary" href="./privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container grid">
+      <div class="card">
+        <div class="kicker">College Attendance Tracker</div>
+        <h1>Effortless, accurate attendance for modern campuses</h1>
+        <p class="lead">Designed for lecturers, HoDs, and administrators. Record attendance in seconds, monitor trends, and export reports with confidence — no clutter, no images, just clean speed.</p>
+        <div class="pills" aria-label="Key highlights">
+          <span class="pill">1‑tap mark</span>
+          <span class="pill">CSV/PDF exports</span>
+          <span class="pill">Offline‑first</span>
+          <span class="pill">Role‑based access</span>
+          <span class="pill">Audit logs</span>
+        </div>
+        <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn primary" href="#demo">Try the interactive demo</a>
+          <a class="btn" href="mailto:brent@senthumolbusiness.co.za">Contact sales</a>
+        </div>
+      </div>
+      <aside class="card" role="complementary" aria-label="Contact & company">
+        <h2>Company</h2>
+        <p><strong>SENTHUMOL BUSINESS CONSULTANTS (PTY) LTD</strong></p>
+        <p>2360 KOMA RD ROCKVILLE, PO MOROKA 1860 TSHIAWELO</p>
+        <p><a href="https://www.senthumolbusiness.co.za/">www.senthumolbusiness.co.za</a></p>
+        <p><a href="mailto:brent@senthumolbusiness.co.za">brent@senthumolbusiness.co.za</a><br/>
+        <a href="tel:+33645119161">+33 6 45 11 91 61</a></p>
+        <div class="small">Built with accessibility and privacy in mind.</div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section id="features" class="section">
+      <div class="container">
+        <div class="header">
+          <h2>Why campuses choose us</h2>
+          <p>From large lecture halls to small seminars, the tracker provides a frictionless flow: create classes, import students, mark attendance, and export insights. Everything stays fast and consistent across devices.</p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <strong>Smart Rolls</strong>
+            <span class="mono">Bulk import · Keyboard shortcuts · Section filters</span>
+          </div>
+          <div class="feature">
+            <strong>Analytics</strong>
+            <span class="mono">Cohort trends · Risk flags · Term summaries</span>
+          </div>
+          <div class="feature">
+            <strong>Exports</strong>
+            <span class="mono">CSV / PDF · API hooks · Audit proof</span>
+          </div>
+          <div class="feature">
+            <strong>Access Control</strong>
+            <span class="mono">Lecturer / Admin roles · SSO ready</span>
+          </div>
+          <div class="feature">
+            <strong>Offline‑first</strong>
+            <span class="mono">Works without internet · Syncs reliably</span>
+          </div>
+          <div class="feature">
+            <strong>Secure by Design</strong>
+            <span class="mono">Encryption in transit · Minimal collection</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="section">
+      <div class="container">
+        <div class="header">
+          <h2>Interactive demo</h2>
+          <p>Play with a simple, in‑browser mock roll. Toggle statuses and export a CSV to see how data flows out. (No images — just pure UI.)</p>
+        </div>
+
+        <div class="demo">
+          <div class="card">
+            <table class="table" aria-describedby="demo-help">
+              <thead>
+                <tr>
+                  <th>Student #</th>
+                  <th>Name</th>
+                  <th>Status</th>
+                  <th style="width:1%">Toggle</th>
+                </tr>
+              </thead>
+              <tbody id="demo-body">
+                <!-- Rows injected by script.js -->
+              </tbody>
+            </table>
+            <p id="demo-help" class="small">Click a row or the toggle to cycle between Present → Absent → Late.</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px">
+              <button class="btn primary" onclick="exportCSV()">Export CSV</button>
+              <button class="btn" onclick="resetDemo()">Reset</button>
+            </div>
+          </div>
+          <div class="card">
+            <h3>How it works</h3>
+            <ol>
+              <li><strong>Create classes</strong> or import from CSV.</li>
+              <li><strong>Mark attendance</strong> with keyboard or tap.</li>
+              <li><strong>Review analytics</strong> for early risk signals.</li>
+              <li><strong>Export</strong> summaries to CSV or PDF.</li>
+            </ol>
+            <div class="code" aria-label="Sample CSV header">
+ID,Name,Status,MarkedAt
+1001,Alex Mokoena,Present,2025-10-18T08:00:00Z
+1002,Boitumelo Dlamini,Absent,2025-10-18T08:01:22Z
+1003,Chipo Ndlovu,Late,2025-10-18T08:03:05Z
+            </div>
+            <p class="small">Need integrations or pricing? <a href="mailto:brent@senthumolbusiness.co.za">Email us</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="header"><h2>FAQ</h2></div>
+        <div class="faq">
+          <details>
+            <summary>Do you store personal data?</summary>
+            <p>We collect the minimum needed to operate attendance features. See the <a href="./privacy.html">Privacy Policy</a> for details.</p>
+          </details>
+          <details>
+            <summary>Is this secure?</summary>
+            <p>Connections use HTTPS. Administrator features support strong passwords and optional SSO. Exported data is under your institution’s control.</p>
+          </details>
+          <details>
+            <summary>Can we migrate data in/out?</summary>
+            <p>Yes — CSV imports/exports are first‑class. An API is available for enterprise customers.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container cols">
+      <div>
+        <strong>SENTHUMOL BUSINESS CONSULTANTS (PTY) LTD</strong><br/>
+        2360 KOMA RD ROCKVILLE, PO MOROKA 1860 TSHIAWELO<br/>
+        <a href="https://www.senthumolbusiness.co.za/">www.senthumolbusiness.co.za</a> ·
+        <a href="mailto:brent@senthumolbusiness.co.za">brent@senthumolbusiness.co.za</a> ·
+        <a href="tel:+33645119161">+33 6 45 11 91 61</a>
+        <div class="small">© <span id="year"></span> SENTHUMOL. All rights reserved.</div>
+      </div>
+      <div style="text-align:right">
+        <a class="btn ghost" href="./privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
